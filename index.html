@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="uk" data-lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LoL UA Community — довідник гравця</title>
+<meta name="description" content="Довідник гравця LoL UA Community: гільдії, профіль, крамниця, команди. / Player guide to LoL UA Community: guilds, profile, shop, commands.">
+<meta property="og:title" content="LoL UA Community">
+<meta property="og:image" content="assets/img/header.webp">
+<meta name="theme-color" content="#060608">
+<link rel="icon" type="image/png" href="assets/img/logo.png">
+<link rel="apple-touch-icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800;900&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════ top bar ═══════════════════════════ -->
+<header class="topbar">
+  <div class="wrap">
+    <button class="brand" id="brand" type="button" aria-label="LoL UA Community">
+      <img src="assets/img/logo.png" width="42" height="42" alt="">
+      <span>LoL UA Community<small><span lang="uk">довідник гравця</span><span lang="en">player guide</span></small></span>
+    </button>
+    <nav class="menu" id="menu" aria-label="Sections">
+      <a href="#guild"><span lang="uk">Гільдія</span><span lang="en">Guild</span></a>
+      <a href="#profile"><span lang="uk">Профіль</span><span lang="en">Profile</span></a>
+      <a href="#shop"><span lang="uk">Крамниця</span><span lang="en">Shop</span></a>
+      <a href="#commands"><span lang="uk">Команди</span><span lang="en">Commands</span></a>
+      <a href="#minigame"><span lang="uk">Міні-гра</span><span lang="en">Mini-game</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set-lang="uk" aria-pressed="true">UA</button>
+      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="btn green small" href="https://send.monobank.ua/jar/743Uf3Z7vy" target="_blank" rel="noopener">
+      ❤️ <span lang="uk">Підтримати</span><span lang="en">Support us</span>
+    </a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════════ hero ═══════════════════════════ -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow"><span lang="uk">Довідник гравця</span><span lang="en">Player guide</span></p>
+      <h1 class="title">LoL UA <em>Community</em></h1>
+      <p class="lede" lang="uk">Спілкуйся, сиди в голосових, розвивай свою гільдію та вигравай призи за активність щомісяця. Тут — усе, що потрібно знати гравцю: від першого рівня до власної гільдії.</p>
+      <p class="lede" lang="en">Chat, hang out in voice, grow your guild and win prizes for activity every month. Everything a player needs to know is here — from your very first level to a guild of your own.</p>
+      <div class="cta">
+        <a class="btn yellow" href="#guild"><span lang="uk">Про гільдії</span><span lang="en">About guilds</span></a>
+        <a class="btn ghost" href="#profile"><span lang="uk">Як фармити</span><span lang="en">How to farm</span></a>
+        <a class="btn ghost" href="#shop"><span lang="uk">Крамниця</span><span lang="en">Shop</span></a>
+      </div>
+    </div>
+    <div class="hero-logo"><img src="assets/img/logo.png" width="360" height="360" alt="LoL UA Community"></div>
+  </div>
+  <div class="ribbon" aria-hidden="true">
+    <div class="ribbon-track">
+      <div class="ribbon-half"><span><span lang="uk">Гільдії</span><span lang="en">Guilds</span></span><span><span lang="uk">Профіль</span><span lang="en">Profile</span></span><span><span lang="uk">Крамниця</span><span lang="en">Shop</span></span><span><span lang="uk">Скриньки</span><span lang="en">Chests</span></span><span><span lang="uk">Топ</span><span lang="en">Leaderboard</span></span><span><span lang="uk">Призи</span><span lang="en">Prizes</span></span></div>
+      <div class="ribbon-half"><span><span lang="uk">Гільдії</span><span lang="en">Guilds</span></span><span><span lang="uk">Профіль</span><span lang="en">Profile</span></span><span><span lang="uk">Крамниця</span><span lang="en">Shop</span></span><span><span lang="uk">Скриньки</span><span lang="en">Chests</span></span><span><span lang="uk">Топ</span><span lang="en">Leaderboard</span></span><span><span lang="uk">Призи</span><span lang="en">Prizes</span></span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <figure class="banner">
+    <img src="assets/img/header.webp" width="1920" height="1080" fetchpriority="high"
+         alt="LoL UA Community — спілкуйся, грай, розвивай свою гільдію та отримуй призи за активність щомісяця"
+         data-alt-uk="LoL UA Community — спілкуйся, грай, розвивай свою гільдію та отримуй призи за активність щомісяця"
+         data-alt-en="LoL UA Community — chat, play, grow your guild and win prizes for activity every month">
+  </figure>
+
+  <ol class="steps">
+    <li><b lang="uk">Спілкуйся й будь у голосових</b><b lang="en">Chat and hang out in voice</b>
+      <span lang="uk">XP і золото нараховуються самі — нічого натискати не треба.</span><span lang="en">XP and gold arrive on their own — nothing to click.</span></li>
+    <li><b lang="uk">Прокачуйся</b><b lang="en">Level up</b>
+      <span lang="uk">Нові рівні дають ролі-самоцвіти, місце в топі та силу твоїй гільдії.</span><span lang="en">New levels bring gem roles, a spot on the leaderboard and strength to your guild.</span></li>
+    <li><b lang="uk">Витрачай у крамниці</b><b lang="en">Spend it in the shop</b>
+      <span lang="uk">Бусти, скриньки, фони карток, VIP-роль, а ще — Nitro.</span><span lang="en">Boosts, chests, card backgrounds, a VIP role — even Nitro.</span></li>
+  </ol>
+
+  <!-- A text version of the banner for people who cannot read it. -->
+    <h3 class="sub" id="prizes">🎁 <span lang="uk">Щомісячні призи</span><span lang="en">Monthly prizes</span></h3>
+  <div class="prizes">
+    <div class="prize">
+      <span class="big">🥇 <span lang="uk">1 місце</span><span lang="en">1st place</span></span>
+      <p lang="uk"><b class="mono">2800 RP</b> на гільдію + подарунок</p>
+      <p lang="en"><b class="mono">2,800 RP</b> for the guild + a gift</p>
+    </div>
+    <div class="prize silver">
+      <span class="big">🥈🥉 <span lang="uk">2–3 місце</span><span lang="en">2nd–3rd place</span></span>
+      <p lang="uk">Подарунок для гільдії</p>
+      <p lang="en">A gift for the guild</p>
+    </div>
+    <div class="prize clash">
+      <span class="big">⚔️ <span lang="uk">Битва гільдій</span><span lang="en">Guild Clash</span></span>
+      <p lang="uk">Буст гільдії + по скрині на кожного гравця команди</p>
+      <p lang="en">A guild boost + a chest for every player on the team</p>
+    </div>
+  </div>
+  <p class="prizes-note" lang="uk">Топ-3 гільдії визначаються за XP, зароблений ними за поточний місяць.</p>
+  <p class="prizes-note" lang="en">The top 3 guilds are decided by the XP they earn this month.</p>
+</div>
+
+<!-- ═══════════════════════════ 01 GUILD ═══════════════════════════ -->
+<section class="block" id="guild">
+<div class="wrap">
+  <div class="sec-head"><span class="no">01</span><h2><span lang="uk">Гільдія</span><span lang="en">Guild</span></h2></div>
+  <p class="sec-lede" lang="uk">Гільдія — це твоя команда всередині сервера: спільний рівень, закритий канал, герб і боротьба за щомісячний топ.</p>
+  <p class="sec-lede" lang="en">A guild is your team inside the server: a shared level, a private channel, an emblem and a fight for the monthly top.</p>
+
+  <h3 class="sub">💡 <span lang="uk">Навіщо вона потрібна</span><span lang="en">Why join one</span></h3>
+  <div class="grid c3">
+    <div class="card"><span class="ico">📈</span>
+      <h4 lang="uk">Спільний прогрес</h4><h4 lang="en">Shared progress</h4>
+      <p lang="uk">З кожної нагороди, яку отримуєш ти, гільдія додатково отримує <b>+15% XP</b> та <b>+5% золота</b>. Ти нічого не втрачаєш — це надбавка, а не податок.</p>
+      <p lang="en">Every award you earn also gives your guild <b>+15% XP</b> and <b>+5% gold</b> on top. You lose nothing — it's a top-up, not a tax.</p></div>
+    <div class="card"><span class="ico">🏆</span>
+      <h4 lang="uk">Щомісячний топ і призи</h4><h4 lang="en">Monthly top &amp; prizes</h4>
+      <p lang="uk">Три найактивніші гільдії місяця отримують призи — дивись банер угорі. Кожного місяця перегони починаються заново.</p>
+      <p lang="en">The three most active guilds of the month win prizes — see the banner above. The race starts over every month.</p></div>
+    <div class="card"><span class="ico">💬</span>
+      <h4 lang="uk">Закритий канал</h4><h4 lang="en">A private channel</h4>
+      <p lang="uk">Кожна гільдія має власний текстовий канал, який бачать лише її учасники. Назва каналу збігається з назвою гільдії.</p>
+      <p lang="en">Every guild gets its own text channel that only its members can see. The channel name follows the guild's name.</p></div>
+    <div class="card"><span class="ico">⚔️</span>
+      <h4 lang="uk">Битва гільдій</h4><h4 lang="en">Guild Clash</h4>
+      <p lang="uk">Особливий режим кастомних ігор: гільдія проти гільдії. Перемоги відображаються кубком на картці, а нагороду отримує вся команда.</p>
+      <p lang="en">A special custom-game mode: guild vs guild. Wins are counted by the cup on your card and the whole team gets the prize.</p></div>
+    <div class="card"><span class="ico">🎨</span>
+      <h4 lang="uk">Свій вигляд</h4><h4 lang="en">Your own look</h4>
+      <p lang="uk">Власний герб, опис і фон картки гільдії — щоб вас упізнавали в чаті та в топі.</p>
+      <p lang="en">Your own emblem, description and card background — so people recognise you in chat and on the leaderboard.</p></div>
+    <div class="card"><span class="ico">🤝</span>
+      <h4 lang="uk">Свої люди</h4><h4 lang="en">Your people</h4>
+      <p lang="uk">У гільдії немає ліміту учасників — збирай команду для рангових ігор, кастомок і просто для спілкування.</p>
+      <p lang="en">There is no member cap — gather a squad for ranked, custom games, or just to chat.</p></div>
+  </div>
+
+  <h3 class="sub">🚀 <span lang="uk">Як створити або вступити</span><span lang="en">How to found or join</span></h3>
+  <div class="grid c2">
+    <div class="card">
+      <h4 lang="uk">Заснувати свою</h4><h4 lang="en">Found your own</h4>
+      <ol class="how">
+        <li lang="uk">Назбирай <span class="pill gold">🪙 <span class="n" data-n="15000">15000</span></span> золота.</li>
+        <li lang="en">Save up <span class="pill gold">🪙 <span class="n" data-n="15000">15000</span></span> gold.</li>
+        <li lang="uk">Виконай <kbd>/guild</kbd> і натисни <b>«Заснувати»</b>.</li>
+        <li lang="en">Run <kbd>/guild</kbd> and press <b>"Found"</b>.</li>
+        <li lang="uk">Введи назву (<b>3–32 символи</b>, унікальну). Ти — власник, бот створює приватний канал.</li>
+        <li lang="en">Type a name (<b>3–32 characters</b>, must be unique). You are the owner and the bot creates the private channel.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h4 lang="uk">Вступити до чужої</h4><h4 lang="en">Join an existing one</h4>
+      <ol class="how">
+        <li lang="uk">Домовся з власником, <b>Правою рукою</b> або <b>Воєводою</b> гільдії.</li>
+        <li lang="en">Ask the owner, a <b>Second Hand</b> or a <b>Warlord</b> of the guild.</li>
+        <li lang="uk">Вони натискають <b>«Запросити / Вигнати»</b> і обирають тебе зі списку.</li>
+        <li lang="en">They press <b>"Invite / Kick"</b> and pick you from the list.</li>
+        <li lang="uk">Тобі прийде <b>запрошення в особисті</b> з кнопками «Прийняти» / «Відхилити». Переконайся, що особисті повідомлення відкриті.</li>
+        <li lang="en">You get an <b>invite in your DMs</b> with Accept / Decline buttons. Make sure your DMs are open.</li>
+      </ol>
+      <p style="margin-top:12px" lang="uk">Бути можна лише в одній гільдії. Вийти можна кнопкою <b>«Вийти»</b> у меню гільдії.</p>
+      <p style="margin-top:12px" lang="en">You can be in only one guild at a time. Leave with the <b>"Leave"</b> button in the guild menu.</p>
+    </div>
+  </div>
+
+  <h3 class="sub">🪪 <span lang="uk">Картка гільдії</span><span lang="en">The guild card</span></h3>
+  <p class="sec-lede" style="margin-bottom:18px" lang="uk">Команди: <kbd>/guild</kbd> — бачиш тільки ти, <kbd>/showguild</kbd> — картка в чаті для всіх. Наведи курсор на пункт справа — і побачиш, де він на картці. (Це приклад із вигаданими даними.)</p>
+  <p class="sec-lede" style="margin-bottom:18px" lang="en">Commands: <kbd>/guild</kbd> — only you see it, <kbd>/showguild</kbd> — posts the card to the chat for everyone. Hover an item on the right to find it on the card. (A sample with made-up data.)</p>
+  <div class="shotbox">
+    <div class="shot">
+      <img lang="uk" src="assets/img/guild_uk.webp" width="1400" height="840" loading="lazy" alt="Приклад картки гільдії">
+      <img lang="en" src="assets/img/guild_en.webp" width="1400" height="840" loading="lazy" alt="Sample guild card">
+      <span class="pin" data-pin="g1" style="--x:43.3%;--y:38.3%">1</span>
+      <span class="pin" data-pin="g2" style="--x:64.5%;--y:69.8%">2</span>
+      <span class="pin" data-pin="g3" style="--x:25%;--y:54.4%">3</span>
+      <span class="pin" data-pin="g4" style="--x:25%;--y:65%">4</span>
+      <span class="pin" data-pin="g5" style="--x:28%;--y:79.6%">5</span>
+      <span class="pin" data-pin="g6" style="--x:17%;--y:90.5%">6</span>
+      <span class="pin" data-pin="g7" style="--x:88.7%;--y:19.4%">7</span>
+      <span class="pin" data-pin="g8" style="--x:94%;--y:79%">8</span>
+    </div>
+    <ul class="legend">
+      <li data-pin="g1"><i>1</i><div><b lang="uk">Герб</b><b lang="en">Emblem</b>
+        <span lang="uk">Круглий герб гільдії. Спершу його схвалюють модератори.</span><span lang="en">The guild's round emblem. Moderators approve it before it appears.</span></div></li>
+      <li data-pin="g2"><i>2</i><div><b lang="uk">Назва й рівень</b><b lang="en">Name &amp; level</b>
+        <span lang="uk">Рівень 1–30 рахується з XP гільдії. Купувати його не треба.</span><span lang="en">Level 1–30 is calculated from the guild's XP. It can't be bought.</span></div></li>
+      <li data-pin="g3"><i>3</i><div><b lang="uk">XP гільдії</b><b lang="en">Guild XP</b>
+        <span lang="uk">Сумарний XP за весь час. Від нього залежить рівень.</span><span lang="en">All the XP ever earned. Your level comes from it.</span></div></li>
+      <li data-pin="g4"><i>4</i><div><b lang="uk">Скарбниця</b><b lang="en">Vault</b>
+        <span lang="uk">Золото гільдії — 5% від золота учасників.</span><span lang="en">The guild's gold — 5% of what members earn.</span></div></li>
+      <li data-pin="g5"><i>5</i><div><b lang="uk">Власник</b><b lang="en">Owner</b>
+        <span lang="uk">Хто керує гільдією.</span><span lang="en">Who runs the guild.</span></div></li>
+      <li data-pin="g6"><i>6</i><div><b lang="uk">Учасники</b><b lang="en">Members</b>
+        <span lang="uk">Скільки людей у гільдії.</span><span lang="en">How many people are in the guild.</span></div></li>
+      <li data-pin="g7"><i>7</i><div><b lang="uk">Кубок</b><b lang="en">Cup</b>
+        <span lang="uk">Перемоги в Битвах гільдій. Поки 0 — кубок сірий.</span><span lang="en">Guild Clash wins. While it's 0 the cup stays grey.</span></div></li>
+      <li data-pin="g8"><i>8</i><div><b lang="uk">Опис</b><b lang="en">Description</b>
+        <span lang="uk">До 111 символів.</span><span lang="en">Up to 111 characters.</span></div></li>
+    </ul>
+  </div>
+  <p style="color:var(--ink-faint);font-size:14px;margin-top:10px" lang="uk">Кнопки під карткою відкривають окремі приватні панелі: <b>Запросити / Вигнати</b>, <b>Ролі</b>, <b>Налаштування</b>, <b>Склад</b> та <b>Інвентар</b> (фони гільдії).</p>
+  <p style="color:var(--ink-faint);font-size:14px;margin-top:10px" lang="en">The buttons under the card open separate private panels: <b>Invite / Kick</b>, <b>Roles</b>, <b>Settings</b>, <b>Members</b> and <b>Inventory</b> (guild backgrounds).</p>
+
+  <h3 class="sub">🎖️ <span lang="uk">Ролі в гільдії</span><span lang="en">Guild roles</span></h3>
+  <div class="tablewrap">
+    <table>
+      <thead><tr><th><span lang="uk">Роль</span><span lang="en">Role</span></th><th><span lang="uk">Що може</span><span lang="en">What they can do</span></th></tr></thead>
+      <tbody>
+        <tr><td><b>👑 <span lang="uk">Власник</span><span lang="en">Owner</span></b></td>
+          <td><span lang="uk">Усе, включно з передачею власності та розпуском гільдії. Обидві дії треба підтвердити вручну.</span><span lang="en">Everything, including transferring ownership and disbanding the guild. Both need a typed confirmation.</span></td></tr>
+        <tr><td><b>🗡️ <span lang="uk">Права рука</span><span lang="en">Second Hand</span></b></td>
+          <td><span lang="uk">Усе, крім передачі власності й розпуску: запрошення, вигнання, ролі, налаштування.</span><span lang="en">Everything except transfer and disband: invites, kicks, roles, settings.</span></td></tr>
+        <tr><td><b>⚔️ <span lang="uk">Воєвода</span><span lang="en">Warlord</span></b></td>
+          <td><span lang="uk">Запрошує нових учасників і виганяє існуючих.</span><span lang="en">Invites new members and kicks existing ones.</span></td></tr>
+        <tr><td><b>🛡️ <span lang="uk">Учасник</span><span lang="en">Member</span></b></td>
+          <td><span lang="uk">Грає, фармить XP для гільдії, бачить склад і доступні фони.</span><span lang="en">Plays, farms XP for the guild, sees the roster and the unlocked backgrounds.</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note" lang="uk"><b>Вигнати</b> можна лише того, чия роль <b>строго нижча</b> за твою.</p>
+  <p class="note" lang="en">You can only <b>kick</b> someone whose role is <b>strictly lower</b> than yours.</p>
+
+  <h3 class="sub">📊 <span lang="uk">Рівні гільдії</span><span lang="en">Guild levels</span></h3>
+  <p class="sec-lede" style="margin-bottom:14px" lang="uk">Рівень гільдії — від 1 до 30, і він завжди рахується з її загального XP. Щомісячне скидання торкається лише рейтингу сезону, а <b>не</b> рівня.</p>
+  <p class="sec-lede" style="margin-bottom:14px" lang="en">A guild's level goes from 1 to 30 and is always calculated from its total XP. The monthly reset only touches the season ranking — <b>not</b> the level.</p>
+  <div class="card"><div id="gateBars" class="odds" aria-label="Guild level thresholds"></div></div>
+
+  <h3 class="sub">⚙️ <span lang="uk">Налаштування гільдії</span><span lang="en">Guild settings</span></h3>
+  <div class="grid c4">
+    <div class="card"><h4 lang="uk">✏️ Назва</h4><h4 lang="en">✏️ Name</h4>
+      <p lang="uk">Можна змінити раз на <b>14 днів</b>, щоб гільдію можна було впізнати.</p><p lang="en">Can be changed once per <b>14 days</b> so a guild stays recognisable.</p></div>
+    <div class="card"><h4 lang="uk">📝 Опис</h4><h4 lang="en">📝 Description</h4>
+      <p lang="uk">До 111 символів, змінюється раз на <b>7 днів</b>.</p><p lang="en">Up to 111 characters, changeable once per <b>7 days</b>.</p></div>
+    <div class="card"><h4 lang="uk">🖼️ Герб</h4><h4 lang="en">🖼️ Emblem</h4>
+      <p lang="uk">Надсилаєш посилання на картинку — модератори перевіряють, і лише тоді вона з'являється на картці.</p><p lang="en">You submit an image link — moderators review it and only then does it appear on the card.</p></div>
+    <div class="card"><h4 lang="uk">🎨 Фон картки</h4><h4 lang="en">🎨 Card background</h4>
+      <p lang="uk">Обираєш серед розблокованих фонів гільдії.</p><p lang="en">Pick from the guild's unlocked backgrounds.</p></div>
+  </div>
+
+  <h3 class="sub">🏆 <span lang="uk">Топ: гравці та гільдії</span><span lang="en">The leaderboard: players &amp; guilds</span></h3>
+  <p class="sec-lede" style="margin-bottom:18px" lang="uk"><kbd>/top</kbd> показує шістку найкращих. Кнопка під карткою перемикає між <b>гравцями</b> (за XP) і <b>гільдіями</b> (за XP цього місяця). На подіумі — лише рівень; нижче — XP та рівень.</p>
+  <p class="sec-lede" style="margin-bottom:18px" lang="en"><kbd>/top</kbd> shows the six best. The button under the card switches between <b>players</b> (by XP) and <b>guilds</b> (by this month's XP). The podium shows level only; the rows below show XP and level.</p>
+  <div class="grid c2">
+    <figure class="plain"><div class="shot">
+      <img lang="uk" src="assets/img/top_players_uk.webp" width="1400" height="840" loading="lazy" alt="Топ гравців">
+      <img lang="en" src="assets/img/top_players_en.webp" width="1400" height="840" loading="lazy" alt="Player leaderboard">
+    </div><figcaption lang="uk">Гравці · за XP</figcaption><figcaption lang="en">Players · by XP</figcaption></figure>
+    <figure class="plain"><div class="shot">
+      <img lang="uk" src="assets/img/top_guilds_uk.webp" width="1400" height="840" loading="lazy" alt="Топ гільдій">
+      <img lang="en" src="assets/img/top_guilds_en.webp" width="1400" height="840" loading="lazy" alt="Guild leaderboard">
+    </div><figcaption lang="uk">Гільдії · за XP сезону (місяця)</figcaption><figcaption lang="en">Guilds · by season (monthly) XP</figcaption></figure>
+  </div>
+</div>
+</section>
+
+<!-- ═══════════════════════════ 02 PROFILE ═══════════════════════════ -->
+<section class="block" id="profile">
+<div class="wrap">
+  <div class="sec-head"><span class="no">02</span><h2><span lang="uk">Профіль</span><span lang="en">Profile</span></h2></div>
+  <p class="sec-lede" lang="uk">Твоя картка — це все про тебе в одній картинці: рівень, ранг у грі, гроші та значки. <kbd>/profile</kbd> бачиш тільки ти, <kbd>/showprofile</kbd> — картка в чаті для всіх.</p>
+  <p class="sec-lede" lang="en">Your card is everything about you in one picture: level, in-game rank, money and badges. Only you see <kbd>/profile</kbd>; <kbd>/showprofile</kbd> posts the card to the chat for everyone.</p>
+
+  <h3 class="sub">🪪 <span lang="uk">Що означає кожен елемент</span><span lang="en">What every part means</span></h3>
+  <div class="shotbox">
+    <div class="shot">
+      <img lang="uk" src="assets/img/profile_uk.webp" width="1400" height="840" loading="lazy" alt="Приклад картки профілю">
+      <img lang="en" src="assets/img/profile_en.webp" width="1400" height="840" loading="lazy" alt="Sample profile card">
+      <span class="pin" data-pin="p1" style="--x:86%;--y:38%">1</span>
+      <span class="pin" data-pin="p2" style="--x:72%;--y:59.6%">2</span>
+      <span class="pin" data-pin="p3" style="--x:72%;--y:72.5%">3</span>
+      <span class="pin" data-pin="p4" style="--x:88%;--y:54%">4</span>
+      <span class="pin" data-pin="p5" style="--x:50%;--y:82%">5</span>
+      <span class="pin" data-pin="p6" style="--x:77%;--y:82%">6</span>
+    </div>
+    <ul class="legend">
+      <li data-pin="p1"><i>1</i><div><b lang="uk">Ранг Solo/Duo</b><b lang="en">Solo/Duo rank</b>
+        <span lang="uk">Твій ранг із Riot: емблема, дивізіон і LP. З'являється після <kbd>/link</kbd> + <kbd>/verify</kbd>. «Не прив'язано», «Не підтверджено» й «Без рангу» — три різні стани.</span>
+        <span lang="en">Your Riot rank: emblem, division and LP. It appears after <kbd>/link</kbd> + <kbd>/verify</kbd>. "Not linked", "Not verified" and "Unranked" are three different states.</span></div></li>
+      <li data-pin="p2"><i>2</i><div><b lang="uk">Золото</b><b lang="en">Gold</b>
+        <span lang="uk">Основна валюта. Витрачається в крамниці та на створення гільдії.</span>
+        <span lang="en">The main currency. Spent in the shop and on founding a guild.</span></div></li>
+      <li data-pin="p3"><i>3</i><div><b lang="uk">Кристали</b><b lang="en">Crystals</b>
+        <span lang="uk">Рідкісна валюта. Витрачається на фони карток і VIP-роль.</span>
+        <span lang="en">The rare currency. Spent on card backgrounds and the VIP role.</span></div></li>
+      <li data-pin="p4"><i>4</i><div><b lang="uk">Кубок</b><b lang="en">Cup</b>
+        <span lang="uk">Твої перемоги в Битвах гільдій. Поки їх немає — кубок сірий.</span>
+        <span lang="en">Your Guild Clash wins. With none yet, the cup is grey.</span></div></li>
+      <li data-pin="p5"><i>5</i><div><b lang="uk">Аватар, нік і рівень</b><b lang="en">Avatar, name &amp; level</b>
+        <span lang="uk">Рівень від 0 до 100. Від 5-го рівня отримуєш роль-самоцвіт на сервері.</span>
+        <span lang="en">Level 0 to 100. From level 5 you get a gem role on the server.</span></div></li>
+      <li data-pin="p6"><i>6</i><div><b lang="uk">Значки</b><b lang="en">Badges</b>
+        <span lang="uk">Значок світиться, коли умову виконано: <b>Admin</b> — права адміністратора; <b>Runes</b> — активний XP/Gold-буст; <b>Name tag</b> — унікальна роль зі скриньки або власна роль; <b>Guild</b> — ти в гільдії.</span>
+        <span lang="en">A badge lights up when its condition is met: <b>Admin</b> — administrator rights; <b>Runes</b> — an active XP/Gold boost; <b>Name tag</b> — a unique chest role or your own personal role; <b>Guild</b> — you are in a guild.</span></div></li>
+    </ul>
+  </div>
+  <div class="grid c3" style="margin-top:16px">
+    <div class="card"><h4>🎒 <span lang="uk">Інвентар</span><span lang="en">Inventory</span></h4>
+      <p lang="uk">Кнопка під карткою. Тут лежать куплені предмети (скриньки, виклик адміна), активні бусти, тимчасові ролі та вибір фону. Скриньки можна відкривати по 1–10 за раз.</p>
+      <p lang="en">The button under the card. It holds your purchased items (chests, admin summon), active boosts, temporary roles and the background picker. Chests can be opened 1–10 at a time.</p></div>
+    <div class="card"><h4>🌐 <span lang="uk">Мова</span><span lang="en">Language</span></h4>
+      <p lang="uk">Кнопка на твоїй власній картці перемикає українську/англійську. Текст на самій картинці — мовою її власника.</p>
+      <p lang="en">The button on your own card toggles Ukrainian/English. The text drawn on the picture is in its owner's language.</p></div>
+    <div class="card"><h4>🖼️ <span lang="uk">Фон</span><span lang="en">Background</span></h4>
+      <p lang="uk">Фон картки — це розблокована картинка. Дивись, як їх отримати, у розділі <a href="#backgrounds">«Крамниця»</a>.</p>
+      <p lang="en">The card background is an unlocked picture. See how to get them in the <a href="#backgrounds">Shop</a> section.</p></div>
+  </div>
+
+  <h3 class="sub">⚡ <span lang="uk">Як фармити XP та золото</span><span lang="en">How to farm XP &amp; gold</span></h3>
+  <p class="sec-lede" style="margin-bottom:16px" lang="uk">Нічого не треба «забирати» — усе нараховується автоматично, у випадковій кількості в межах діапазону.</p>
+  <p class="sec-lede" style="margin-bottom:16px" lang="en">There's nothing to claim — it all accrues automatically, a random amount within the range.</p>
+  <div class="grid c4">
+    <div class="card income"><div class="head"><h4 lang="uk">Повідомлення</h4><h4 lang="en">Messages</h4><span>💬</span></div>
+      <div class="rate"><span>XP</span><span class="v xp">75 – 125</span></div>
+      <div class="rate"><span lang="uk">Золото</span><span lang="en">Gold</span><span class="v coin">5 – 15</span></div>
+      <small lang="uk">Раз на 90 секунд. Повідомлення — від 2 символів, тож «ок» не рахується.</small>
+      <small lang="en">Once per 90 seconds. A message must be 2+ characters, so a bare "ok" doesn't count.</small></div>
+    <div class="card income"><div class="head"><h4 lang="uk">Голосові канали</h4><h4 lang="en">Voice channels</h4><span>🎙️</span></div>
+      <div class="rate"><span>XP</span><span class="v xp">50 – 100</span></div>
+      <div class="rate"><span lang="uk">Золото</span><span lang="en">Gold</span><span class="v coin">5 – 10</span></div>
+      <small lang="uk">Кожні 3 хвилини. Не рахується: AFK-канал, перебування в каналі наодинці та вимкнений звук (deafen).</small>
+      <small lang="en">Every 3 minutes. Doesn't count: the AFK channel, being alone in a channel, or being deafened.</small></div>
+    <div class="card income"><div class="head"><h4 lang="uk">Стрім / демонстрація екрана</h4><h4 lang="en">Streaming / screen share</h4><span>🖥️</span></div>
+      <div class="rate"><span lang="uk">Бонус</span><span lang="en">Rate</span><span class="v xp">+10%</span></div>
+      <div class="rate"><span lang="uk">Тік</span><span lang="en">Tick</span><span class="v coin">2 <span lang="uk">хв</span><span lang="en">min</span></span></div>
+      <small lang="uk">Замінює звичайний голосовий тік, поки ти стрімиш — ніколи обидва одразу.</small>
+      <small lang="en">Replaces the plain voice tick while you stream — never both at once.</small></div>
+    <div class="card income"><div class="head"><h4 lang="uk">Новий рівень</h4><h4 lang="en">Level-up</h4><span>🎉</span></div>
+      <div class="rate"><span lang="uk">Золото</span><span lang="en">Gold</span><span class="v coin">50 × <span lang="uk">рівень</span><span lang="en">level</span></span></div>
+      <div class="rate"><span lang="uk">Сповіщення</span><span lang="en">Notice</span><span class="v">DM</span></div>
+      <small lang="uk">Рівень 20 дає 1 000 золота. Сповіщення про рівень надходить в особисті повідомлення.</small>
+      <small lang="en">Level 20 pays 1,000 gold. The level-up notice arrives in your DMs.</small></div>
+  </div>
+  <div class="share">
+    <div class="eq"><span lang="uk">кожна нагорода</span><span lang="en">every award</span> → <span><span lang="uk">ти отримуєш</span><span lang="en">you keep</span> <span class="hl">100%</span></span> + <span><span lang="uk">гільдія +</span><span lang="en">your guild +</span><span class="hl">15%</span> XP / <span class="hl t">5%</span> <span lang="uk">золота</span><span lang="en">gold</span></span></div>
+    <p lang="uk">Гільдія отримує надбавку зверху, а твоя частка від цього не зменшується.</p>
+    <p lang="en">The guild gets a top-up — your share never shrinks because of it.</p>
+  </div>
+  <p class="note warn" lang="uk"><b>Хочеш швидше?</b> Купи <a href="#shop">XP/Gold Boost</a> — <b>+10%</b> до XP і золота з повідомлень та голосу. Увага: бонус стріму та буст <b>не складаються</b>.</p>
+  <p class="note warn" lang="en"><b>Want it faster?</b> Buy an <a href="#shop">XP/Gold Boost</a> — <b>+10%</b> XP and gold from messages and voice. Note: the stream bonus and the boost <b>never stack</b>.</p>
+
+  <h3 class="sub">📈 <span lang="uk">Рівні та ролі-самоцвіти</span><span lang="en">Levels &amp; gem roles</span></h3>
+  <p class="sec-lede" style="margin-bottom:16px" lang="uk">Кожен рівень коштує трохи більше за попередній: <span class="mono">140·n + 3400</span> XP. Пересунь повзунок — побачиш, скільки XP та часу потрібно.</p>
+  <p class="sec-lede" style="margin-bottom:16px" lang="en">Each level costs slightly more than the last: <span class="mono">140·n + 3400</span> XP. Drag the slider to see how much XP and time it takes.</p>
+  <div class="calc">
+    <div class="calc-top">
+      <div><label for="lvl"><span lang="uk">Рівень</span><span lang="en">Level</span></label> <output class="lv" id="lvOut" for="lvl">25</output></div>
+      <div id="lvTier" style="font-weight:700"></div>
+    </div>
+    <input type="range" id="lvl" min="1" max="100" value="25" aria-label="Level">
+    <dl class="readout">
+      <div><dt lang="uk">XP всього</dt><dt lang="en">Total XP</dt><dd id="rdXp">—</dd></div>
+      <div><dt lang="uk">Голос, год</dt><dt lang="en">Voice hours</dt><dd id="rdHours">—</dd></div>
+      <div><dt lang="uk">≈ днів по 2 год</dt><dt lang="en">≈ days at 2 h/day</dt><dd id="rdDays">—</dd></div>
+      <div><dt lang="uk">Золото за рівні</dt><dt lang="en">Level-up gold</dt><dd id="rdGold">—</dd></div>
+    </dl>
+    <svg id="xpChart" viewBox="0 0 900 260" role="img" aria-label="XP curve"></svg>
+  </div>
+  <p style="color:var(--ink-faint);font-size:13.5px;margin-top:8px" lang="uk">Розрахунок — за середнім голосовим темпом ≈1500 XP/год. Чат і стрім прискорюють це.</p>
+  <p style="color:var(--ink-faint);font-size:13.5px;margin-top:8px" lang="en">Estimate uses an average voice pace of ≈1,500 XP/hour. Chatting and streaming speed this up.</p>
+
+  <p style="margin-top:20px;font-weight:700" lang="uk">Досягаючи порогу, ти отримуєш на сервері роль-самоцвіт. Нова роль <u>замінює</u> попередню — одночасно в тебе лише одна.</p>
+  <p style="margin-top:20px;font-weight:700" lang="en">When you hit a threshold you get a gem role on the server. A new role <u>replaces</u> the old one — you only ever hold one.</p>
+  <div class="tiers" id="tiers">
+    <div class="tier" data-lv="5" style="--tc:#9eaaE6"><b>Obsidian</b><span class="lv">5 lvl</span><span class="dd">≈ 6 <span lang="uk">дн.</span><span lang="en">d</span></span></div>
+    <div class="tier" data-lv="10" style="--tc:#7df0d0"><b>Aquamarine</b><span class="lv">10 lvl</span><span class="dd">≈ 13 <span lang="uk">дн.</span><span lang="en">d</span></span></div>
+    <div class="tier" data-lv="25" style="--tc:#ff5f7e"><b>Ruby</b><span class="lv">25 lvl</span><span class="dd">≈ 42 <span lang="uk">дн.</span><span lang="en">d</span></span></div>
+    <div class="tier" data-lv="35" style="--tc:#bb8cff"><b>Amethyst</b><span class="lv">35 lvl</span><span class="dd">≈ 67 <span lang="uk">дн.</span><span lang="en">d</span></span></div>
+    <div class="tier" data-lv="45" style="--tc:#ffd24d"><b>Citrine</b><span class="lv">45 lvl</span><span class="dd">≈ 97 <span lang="uk">дн.</span><span lang="en">d</span></span></div>
+    <div class="tier" data-lv="60" style="--tc:#3fcbea"><b>Turquoise</b><span class="lv">60 lvl</span><span class="dd">≈ 151 <span lang="uk">дн.</span><span lang="en">d</span></span></div>
+    <div class="tier" data-lv="75" style="--tc:#ffb8dc"><b>Quartz</b><span class="lv">75 lvl</span><span class="dd">≈ 215 <span lang="uk">дн.</span><span lang="en">d</span></span></div>
+    <div class="tier" data-lv="100" style="--tc:#ffffff"><b>Exclusive</b><span class="lv">100 lvl</span><span class="dd">≈ 344 <span lang="uk">дн.</span><span lang="en">d</span></span></div>
+  </div>
+  <p style="color:var(--ink-faint);font-size:13.5px;margin-top:8px" lang="uk">Дні — за ≈2 години голосового чату щодня.</p>
+  <p style="color:var(--ink-faint);font-size:13.5px;margin-top:8px" lang="en">Days assume ≈2 hours of voice per day.</p>
+
+  <h3 class="sub">💰 <span lang="uk">Три валюти</span><span lang="en">Three currencies</span></h3>
+  <div class="grid c3">
+    <div class="card"><span class="ico">⭐</span><h4>XP</h4>
+      <p lang="uk"><b>Звідки:</b> повідомлення, голос, стрім. <b>Куди:</b> нікуди — це чистий прогрес: рівень, роль-самоцвіт, місце в топі.</p>
+      <p lang="en"><b>From:</b> messages, voice, streaming. <b>To:</b> nowhere — it's pure progress: level, gem role, leaderboard place.</p></div>
+    <div class="card"><span class="ico">🪙</span><h4 lang="uk">Золото</h4><h4 lang="en">Gold</h4>
+      <p lang="uk"><b>Звідки:</b> повідомлення, голос, нові рівні, дублікати зі скриньок. <b>Куди:</b> крамниця й створення гільдії (<span class="n" data-n="15000">15000</span>).</p>
+      <p lang="en"><b>From:</b> messages, voice, level-ups, chest duplicates. <b>To:</b> the shop and founding a guild (<span class="n" data-n="15000">15000</span>).</p></div>
+    <div class="card"><span class="ico">💎</span><h4 lang="uk">Кристали</h4><h4 lang="en">Crystals</h4>
+      <p lang="uk"><b>Звідки:</b> скриньки, особливі нагороди, бонус за прив'язку Riot. <b>Куди:</b> фони карток і VIP-роль. Самі не нараховуються.</p>
+      <p lang="en"><b>From:</b> chests, special rewards, the Riot link bonus. <b>To:</b> card backgrounds and the VIP role. They don't drip in automatically.</p></div>
+  </div>
+
+  <h3 class="sub" id="riot">🎯 <span lang="uk">Прив'язка Riot-акаунта</span><span lang="en">Linking your Riot account</span></h3>
+  <div class="grid c2">
+    <div class="card">
+      <h4 lang="uk">Три кроки</h4><h4 lang="en">Three steps</h4>
+      <ol class="how">
+        <li lang="uk"><kbd>/link Ім'я#Тег</kbd> — наприклад, <span class="mono">Faker#EUW</span>. Бот знайде акаунт і покаже <b>іконку профілю</b>.</li>
+        <li lang="en"><kbd>/link Name#Tag</kbd> — for example <span class="mono">Faker#EUW</span>. The bot finds the account and shows you a <b>profile icon</b>.</li>
+        <li lang="uk">Постав цю іконку в клієнті League of Legends. Зачекай ≈1 хвилину — Riot кешує дані.</li>
+        <li lang="en">Set that icon in the League of Legends client. Wait about a minute — Riot caches data.</li>
+        <li lang="uk"><kbd>/verify</kbd> — упродовж <b>15 хвилин</b>. Готово!</li>
+        <li lang="en"><kbd>/verify</kbd> — within <b>15 minutes</b>. Done!</li>
+      </ol>
+      <p style="margin-top:12px;color:var(--ink-faint);font-size:14px" lang="uk">Чому так? Це захист від самозванців: підтвердити можна лише власний акаунт. Відв'язати — <kbd>/unlink</kbd>.</p>
+      <p style="margin-top:12px;color:var(--ink-faint);font-size:14px" lang="en">Why? It stops impostors — only the account's real owner can verify it. To unlink, use <kbd>/unlink</kbd>.</p>
+    </div>
+    <div class="card" style="border-color:rgba(255,204,77,.5);background:linear-gradient(160deg,rgba(255,204,77,.16),var(--panel) 60%)">
+      <h4 lang="uk">🎁 Що ти отримуєш</h4><h4 lang="en">🎁 What you get</h4>
+      <p lang="uk">🎉 <b>Одноразовий бонус:</b> <span class="pill gold">🪙 500</span> <span class="pill crystal">💎 5</span> — лише за першу підтверджену прив'язку акаунта. Повторна прив'язка нагороди не дає.</p>
+      <p lang="en">🎉 <b>One-time bonus:</b> <span class="pill gold">🪙 500</span> <span class="pill crystal">💎 5</span> — only for the first verified link of your account. Relinking pays nothing.</p>
+      <ul style="color:var(--ink-dim);padding-left:20px;margin:10px 0 0">
+        <li lang="uk">Твій ранг Solo/Duo на картці профілю.</li><li lang="en">Your Solo/Duo rank on your profile card.</li>
+        <li lang="uk">Роль твого рангу на сервері — оновлюється кожні 12 годин.</li><li lang="en">Your rank role on the server — refreshed every 12 hours.</li>
+        <li lang="uk">Перевірка рангу в кастомних іграх з обмеженням за рангом.</li><li lang="en">Rank checks in custom games that have a rank limit.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ═══════════════════════════ 03 SHOP ═══════════════════════════ -->
+<section class="block" id="shop">
+<div class="wrap">
+  <div class="sec-head"><span class="no">03</span><h2><span lang="uk">Крамниця</span><span lang="en">Shop</span></h2></div>
+  <p class="sec-lede" lang="uk"><kbd>/shop</kbd> — дві сторінки, між якими перемикає кнопка 🔄. Обираєш товар у меню — і під крамницею з'являється окреме приватне повідомлення з кнопкою «Купити» (для скриньок ще й вибір кількості від 1 до 10). Результат покупки з'являється в ньому ж, а картинка крамниці не перемальовується. Бусти, фони, VIP та заявки спрацьовують <b>одразу</b>; скриньки й виклик адміна лягають у 🎒 <b>Інвентар</b>, звідки ти використовуєш їх, коли захочеш.</p>
+  <p class="sec-lede" lang="en"><kbd>/shop</kbd> has two pages — switch with the 🔄 button. Pick an item from the menu and a separate private message with a Buy button appears under the shop (chests also get a 1–10 quantity picker). The result shows up in that same message, and the shop picture is not redrawn. Boosts, backgrounds, VIP and requests work <b>instantly</b>; chests and the admin summon go into your 🎒 <b>Inventory</b>, where you use them whenever you like.</p>
+
+  <div class="grid c2">
+    <figure class="plain"><div class="shot"><img src="assets/img/shop.webp" width="1400" height="840" loading="lazy" alt="Крамниця, сторінка 1" data-alt-uk="Крамниця, сторінка 1" data-alt-en="Shop, page 1"></div>
+      <figcaption lang="uk">Сторінка 1 · Nitro, бусти, скриньки</figcaption><figcaption lang="en">Page 1 · Nitro, boosts, chests</figcaption></figure>
+    <figure class="plain"><div class="shot"><img src="assets/img/shop_refresh.webp" width="1400" height="840" loading="lazy" alt="Крамниця, сторінка 2" data-alt-uk="Крамниця, сторінка 2" data-alt-en="Shop, page 2"></div>
+      <figcaption lang="uk">Сторінка 2 · фони, виклик адміна, тренування, VIP</figcaption><figcaption lang="en">Page 2 · backgrounds, admin summon, training, VIP</figcaption></figure>
+  </div>
+
+  <h3 class="sub">🛍️ <span lang="uk">Що можна купити</span><span lang="en">What you can buy</span></h3>
+  <div class="grid c2">
+    <div class="card shop-item"><span class="em">⚡</span><div>
+      <h4>XP/Gold Boost</h4>
+      <p lang="uk"><b>+10%</b> до XP і золота з повідомлень та голосу. Активується одразу. Повторна покупка <b>подовжує</b> поточний буст, а не замінює. Бонус за стрім і буст не складаються.</p>
+      <p lang="en"><b>+10%</b> XP and gold from messages and voice. Activates instantly. Buying another <b>extends</b> the current boost instead of replacing it. The stream bonus and the boost never stack.</p>
+      <div class="prices"><span class="pill gold">1 <span lang="uk">день</span><span lang="en">day</span> · 🪙 750</span><span class="pill gold">3 <span lang="uk">дні</span><span lang="en">days</span> · 🪙 <span class="n" data-n="1400">1400</span></span><span class="pill gold">7 <span lang="uk">днів</span><span lang="en">days</span> · 🪙 <span class="n" data-n="3500">3500</span></span><span class="pill gold"><span lang="uk">місяць</span><span lang="en">month</span> · 🪙 <span class="n" data-n="13000">13000</span></span></div>
+    </div></div>
+
+    <div class="card shop-item"><span class="em">🎁</span><div>
+      <h4 lang="uk">Скриньки</h4><h4 lang="en">Chests</h4>
+      <p lang="uk">Лягають в інвентар. Можна купити до 10 за раз і відкрити до 10 за раз — випадковий приз: роль, фон, буст або кристали. Кожна скринька відкривається по-своєму, зі своїми фразами. Шанси — нижче.</p>
+      <p lang="en">They go into your inventory. Buy up to 10 at once and open up to 10 at once for a random prize: a role, a background, a boost or crystals. Each chest opens in its own style, with its own lines. Odds are below.</p>
+      <div class="prices"><span class="pill gold">🎁 <span lang="uk">Базова</span><span lang="en">Basic</span> · 🪙 <span class="n" data-n="1000">1000</span></span><span class="pill gold">🎁 Bandle City · 🪙 <span class="n" data-n="2500">2500</span></span></div>
+    </div></div>
+
+    <div class="card shop-item"><span class="em">🖼️</span><div>
+      <h4 lang="uk">Фони карток</h4><h4 lang="en">Card backgrounds</h4>
+      <p lang="uk">Назавжди змінюють вигляд твоєї картки профілю. Якщо фон уже є, купити його вдруге не вийде (кристали не списуються).</p>
+      <p lang="en">Permanently change how your profile card looks. If you already own one, you can't buy it again (no crystals are charged).</p>
+      <div class="prices"><span class="pill crystal">K/DA Ahri · 💎 300</span><span class="pill crystal">Seraphine · 💎 250</span><span class="pill crystal">Sylas · 💎 200</span></div>
+    </div></div>
+
+    <div class="card shop-item"><span class="em">👑</span><div>
+      <h4 lang="uk">Виклик Головного Адміна</h4><h4 lang="en">Summon the Main Admin</h4>
+      <p lang="uk">Лягає в інвентар. Коли ти <b>і Головний Адмін</b> перебуваєте в голосових каналах, натискаєш «Використати» — бот <b>переносить адміна до твого каналу приблизно на 10 хвилин</b>, а потім повертає назад.</p>
+      <p lang="en">Goes into your inventory. When <b>you and the Main Admin</b> are both in voice channels, press "Use" — the bot <b>moves the admin to your channel for about 10 minutes</b>, then moves them back.</p>
+      <p style="color:var(--ink-faint);font-size:13.5px" lang="uk">Це не справжній дзвінок: бот лише переносить адміна між каналами. Користуйся розумно 😉</p>
+      <p style="color:var(--ink-faint);font-size:13.5px" lang="en">It's not a real call: the bot just moves the admin between channels. Use it wisely 😉</p>
+      <div class="prices"><span class="pill gold">🪙 <span class="n" data-n="50000">50000</span></span></div>
+    </div></div>
+
+    <div class="card shop-item"><span class="em">💠</span><div>
+      <h4 lang="uk">VIP-роль</h4><h4 lang="en">VIP role</h4>
+      <p lang="uk">Видає VIP-роль на сервері на <b>14 днів</b>. Повторна покупка подовжує термін дії, а не замінює його.</p>
+      <p lang="en">Grants the VIP role on the server for <b>14 days</b>. Buying another extends the time instead of replacing it.</p>
+      <div class="prices"><span class="pill crystal">💎 777</span></div>
+    </div></div>
+
+    <div class="card shop-item"><span class="em">🎟️</span><div>
+      <h4 lang="uk">Nitro та тренування</h4><h4 lang="en">Nitro &amp; training</h4>
+      <p lang="uk">Бот не видає це сам — покупка створює <b>заявку для адміністрації</b>, і з тобою зв'яжуться. Nitro Basic, Nitro Pro та персональне тренування з SQM1.</p>
+      <p lang="en">The bot can't hand these out itself — a purchase files a <b>request with the admin team</b> and they'll reach out. Nitro Basic, Nitro Pro and a personal training session with SQM1.</p>
+      <div class="prices"><span class="pill gold">Nitro Basic · 🪙 <span class="n" data-n="150000">150000</span></span><span class="pill gold">Nitro Pro · 🪙 <span class="n" data-n="250000">250000</span></span><span class="pill gold">SQM1 · 🪙 <span class="n" data-n="100000">100000</span></span></div>
+    </div></div>
+  </div>
+
+  <h3 class="sub" id="chests">🎲 <span lang="uk">Що випадає зі скриньок</span><span lang="en">What chests drop</span></h3>
+  <div class="tabs" role="tablist">
+    <button type="button" role="tab" aria-selected="true" data-chest="basic">🎁 <span lang="uk">Базова</span><span lang="en">Basic</span></button>
+    <button type="button" role="tab" aria-selected="false" data-chest="bandle">🎁 Bandle City</button>
+  </div>
+  <div class="grid c2">
+    <div class="card" data-chestpanel="basic">
+      <h4 lang="uk">Базова скринька — <span class="mono">1 000 🪙</span></h4><h4 lang="en">Basic Chest — <span class="mono">1,000 🪙</span></h4>
+      <div class="odds">
+        <div class="odd"><span lang="uk">🎖️ Особлива роль на сервері</span><span lang="en">🎖️ A special server role</span><span class="p">5%</span><div class="bar"><i style="--w:5%;--c:var(--gold)"></i></div></div>
+        <div class="odd"><span lang="uk">🖼️ Фон «Олдскул Фідлстікс» <b style="color:var(--pink)">· рідкісний</b></span><span lang="en">🖼️ "Oldschool Fiddlesticks" background <b style="color:var(--pink)">· rare</b></span><span class="p">1%</span><div class="bar"><i style="--w:1%;--c:var(--pink)"></i></div></div>
+        <div class="odd"><span lang="uk">🖼️ Фон «Месьє Мордекайзер»</span><span lang="en">🖼️ "Messier Mordekaiser" background</span><span class="p">14%</span><div class="bar"><i style="--w:14%;--c:var(--violet)"></i></div></div>
+        <div class="odd"><span lang="uk">⚡ XP/Gold Boost на 1 день</span><span lang="en">⚡ XP/Gold Boost for 1 day</span><span class="p">20%</span><div class="bar"><i style="--w:20%;--c:var(--good)"></i></div></div>
+        <div class="odd"><span lang="uk">💎 2–10 кристалів</span><span lang="en">💎 2–10 crystals</span><span class="p">60%</span><div class="bar"><i style="--w:60%;--c:var(--crystal)"></i></div></div>
+      </div>
+    </div>
+    <div class="card" data-chestpanel="bandle" hidden>
+      <h4 lang="uk">Скринька Bandle City — <span class="mono">2 500 🪙</span></h4><h4 lang="en">Bandle City Chest — <span class="mono">2,500 🪙</span></h4>
+      <div class="odds">
+        <div class="odd"><span lang="uk">🎖️ Особлива роль на сервері</span><span lang="en">🎖️ A special server role</span><span class="p">5%</span><div class="bar"><i style="--w:5%;--c:var(--gold)"></i></div></div>
+        <div class="odd"><span lang="uk">🖼️ Фон «Олдскул Джакс»</span><span lang="en">🖼️ "Oldschool Jax" background</span><span class="p">9%</span><div class="bar"><i style="--w:9%;--c:var(--violet)"></i></div></div>
+        <div class="odd"><span lang="uk">🖼️ Фон «Дух Цвітіння Трістана»</span><span lang="en">🖼️ "Spirit Blossom Tristana" background</span><span class="p">15%</span><div class="bar"><i style="--w:15%;--c:var(--violet)"></i></div></div>
+        <div class="odd"><span lang="uk">⚡ XP/Gold Boost на 1 день</span><span lang="en">⚡ XP/Gold Boost for 1 day</span><span class="p">10%</span><div class="bar"><i style="--w:10%;--c:var(--good)"></i></div></div>
+        <div class="odd"><span lang="uk">⚡ XP/Gold Boost на 3 дні</span><span lang="en">⚡ XP/Gold Boost for 3 days</span><span class="p">5%</span><div class="bar"><i style="--w:5%;--c:var(--good)"></i></div></div>
+        <div class="odd"><span lang="uk">🎫 Квиток на власну роль на місяць <b style="color:var(--pink)">· унікальний</b></span><span lang="en">🎫 Own-role ticket for a month <b style="color:var(--pink)">· unique</b></span><span class="p">1%</span><div class="bar"><i style="--w:1%;--c:var(--pink)"></i></div></div>
+        <div class="odd"><span lang="uk">💎 10–20 кристалів</span><span lang="en">💎 10–20 crystals</span><span class="p">55%</span><div class="bar"><i style="--w:55%;--c:var(--crystal)"></i></div></div>
+      </div>
+    </div>
+    <div class="card">
+      <h4 lang="uk">♻️ А якщо випало те, що вже є?</h4><h4 lang="en">♻️ What if you roll something you own?</h4>
+      <p lang="uk">Роль або фон, які в тебе вже є, не пропадають даремно — скринька замінює їх компенсацією:</p>
+      <p lang="en">A role or background you already have doesn't go to waste — the chest swaps it for compensation:</p>
+      <div class="prices"><span class="pill">🎁 <span lang="uk">Базова</span><span lang="en">Basic</span>: 🪙 250 + 💎 15</span><span class="pill">🎁 Bandle City: 🪙 500 + 💎 25</span></div>
+      <p style="margin-top:12px;color:var(--ink-faint);font-size:14px" lang="uk">Колір вікна нагороди показує рідкість: золотий — найцінніше, фіолетовий — фон, зелений — буст, синій — кристали, сірий — компенсація.</p>
+      <p style="margin-top:12px;color:var(--ink-faint);font-size:14px" lang="en">The reveal's colour shows the rarity: gold is the best, purple a background, green a boost, blue crystals, grey compensation.</p>
+    </div>
+  </div>
+
+  <h3 class="sub" id="ownrole">🎫 <span lang="uk">Власна роль на місяць</span><span lang="en">Your own role for a month</span></h3>
+  <div class="grid c2">
+    <div class="card">
+      <h4 lang="uk">Що це</h4><h4 lang="en">What it is</h4>
+      <p lang="uk">Рідкісний квиток 🎫: з шансом <b>1%</b> випадає зі скриньки Bandle City, купити його не можна. Дає змогу створити <b>власну роль із власною назвою й кольором</b> на <b>30 днів</b>. Поки роль активна, на картці світиться значок Name tag.</p>
+      <p lang="en">A rare 🎫 ticket: it drops from the Bandle City chest with a <b>1%</b> chance and cannot be bought. It lets you create a <b>role of your own, with your own name and colour</b>, for <b>30 days</b>. While the role is active, the Name tag badge lights up on your card.</p>
+    </div>
+    <div class="card">
+      <h4 lang="uk">Як ним скористатися</h4><h4 lang="en">How to use it</h4>
+      <ol class="how">
+        <li lang="uk">🎒 Інвентар → обери квиток → «Використати».</li>
+        <li lang="en">🎒 Inventory → select the ticket → "Use".</li>
+        <li lang="uk">Введи назву ролі (2–32 символи) і, за бажанням, колір у форматі <span class="mono">#FF8800</span>.</li>
+        <li lang="en">Enter the role name (2–32 characters) and, optionally, a colour like <span class="mono">#FF8800</span>.</li>
+        <li lang="uk">Запит піде головному адміну. <b>Схвалить</b> — бот створить роль і видасть її тобі. <b>Відхилить</b> — квиток повернеться в інвентар.</li>
+        <li lang="en">The request goes to the head admin. <b>Approved</b> — the bot creates the role and gives it to you. <b>Declined</b> — the ticket returns to your inventory.</li>
+      </ol>
+      <p style="margin-top:12px;color:var(--ink-faint);font-size:14px" lang="uk">Одночасно може бути лише один запит і одна власна роль. Після 30 днів роль зникає.</p>
+      <p style="margin-top:12px;color:var(--ink-faint);font-size:14px" lang="en">Only one request and one personal role can exist at a time. After 30 days the role disappears.</p>
+    </div>
+  </div>
+
+  <h3 class="sub" id="backgrounds">🎨 <span lang="uk">Усі фони карток і де їх узяти</span><span lang="en">Every card background &amp; how to get it</span></h3>
+  <p class="sec-lede" style="margin-bottom:16px" lang="uk">Розблокований фон обираєш у <b>🎒 Інвентарі</b> → «Фон картки» (меню з'являється, коли в тебе більше ніж один фон).</p>
+  <p class="sec-lede" style="margin-bottom:16px" lang="en">You pick an unlocked background in <b>🎒 Inventory</b> → "Card background" (the menu appears once you own more than one).</p>
+  <div class="bgs">
+    <div class="bg"><div class="th"><img src="assets/img/bg/default.webp" loading="lazy" alt=""></div><div class="meta"><b lang="uk">Стандартний</b><b lang="en">Default</b><span class="pill free" lang="uk">для всіх</span><span class="pill free" lang="en">everyone has it</span></div></div>
+    <div class="bg"><div class="th"><img src="assets/img/bg/ahri_crystal.webp" loading="lazy" alt=""></div><div class="meta"><b lang="uk">K/DA Арі</b><b lang="en">K/DA Ahri</b><span class="pill crystal">💎 300 · <span lang="uk">крамниця</span><span lang="en">shop</span></span></div></div>
+    <div class="bg"><div class="th"><img src="assets/img/bg/seraphine_star.webp" loading="lazy" alt=""></div><div class="meta"><b lang="uk">Зірковий Захисник Серафіна</b><b lang="en">Star Guardian Seraphine</b><span class="pill crystal">💎 250 · <span lang="uk">крамниця</span><span lang="en">shop</span></span></div></div>
+    <div class="bg"><div class="th"><img src="assets/img/bg/sylas_dark.webp" loading="lazy" alt=""></div><div class="meta"><b lang="uk">Попільний вбивця Сайлас</b><b lang="en">Ashen Slayer Sylas</b><span class="pill crystal">💎 200 · <span lang="uk">крамниця</span><span lang="en">shop</span></span></div></div>
+    <div class="bg"><div class="th"><img src="assets/img/bg/mordekaiser_messier.webp" loading="lazy" alt=""></div><div class="meta"><b lang="uk">Месьє Мордекайзер</b><b lang="en">Messier Mordekaiser</b><span>🎁 <span lang="uk">Базова скринька · 14%</span><span lang="en">Basic Chest · 14%</span></span></div></div>
+    <div class="bg"><div class="th"><img src="assets/img/bg/fidlesticks_old.webp" loading="lazy" alt=""></div><div class="meta"><b lang="uk">Олдскул Фідлстікс</b><b lang="en">Oldschool Fiddlesticks</b><span>🎁 <span lang="uk">Базова скринька · 1% (рідкісний)</span><span lang="en">Basic Chest · 1% (rare)</span></span></div></div>
+    <div class="bg"><div class="th"><img src="assets/img/bg/jax_old.webp" loading="lazy" alt=""></div><div class="meta"><b lang="uk">Олдскул Джакс</b><b lang="en">Oldschool Jax</b><span>🎁 <span lang="uk">Bandle City · 9%</span><span lang="en">Bandle City · 9%</span></span></div></div>
+    <div class="bg"><div class="th"><img src="assets/img/bg/tristana_spiritblossom.webp" loading="lazy" alt=""></div><div class="meta"><b lang="uk">Дух Цвітіння Трістана</b><b lang="en">Spirit Blossom Tristana</b><span>🎁 <span lang="uk">Bandle City · 15%</span><span lang="en">Bandle City · 15%</span></span></div></div>
+    <div class="bg special"><div class="th"><img src="assets/img/bg/ua_corki.webp" loading="lazy" alt=""></div><div class="meta"><b>Будем летіть, будем всіх бомбить...</b><span>💙💛 <span lang="uk">Задонать будь-яку суму на ЗСУ й надішли підтвердження адміну</span><span lang="en">Donate any amount to the Ukrainian Army and send the confirmation to an admin</span></span></div></div>
+    <div class="bg more" aria-hidden="true"><span lang="uk">Та інші</span><span lang="en">And more</span></div>
+  </div>
+</div>
+</section>
+
+<!-- ═══════════════════════════ 04 COMMANDS ═══════════════════════════ -->
+<section class="block" id="commands">
+<div class="wrap">
+  <div class="sec-head"><span class="no">04</span><h2><span lang="uk">Команди</span><span lang="en">Commands</span></h2></div>
+  <p class="sec-lede" lang="uk">Тільки те, що потрібно звичайному гравцю. Пиши команду в будь-якому чаті сервера.</p>
+  <p class="sec-lede" lang="en">Only what an ordinary player needs. Type a command in any chat of the server.</p>
+
+  <input class="search" id="search" type="search" autocomplete="off" aria-label="Search"
+         data-ph-uk="Пошук команди…" data-ph-en="Search a command…">
+
+  <div class="cmds" id="cmdList">
+    <div class="cmd-row" data-item><code class="cmd">/profile</code><p lang="uk">Твоя картка: рівень, ранг, золото, кристали. Бачиш лише ти. Під нею — 🎒 Інвентар і 🌐 мова.</p><p lang="en">Your card: level, rank, gold, crystals. Only you see it. Under it — 🎒 Inventory and 🌐 language.</p><span class="tag t-profile" lang="uk">профіль</span><span class="tag t-profile" lang="en">profile</span></div>
+    <div class="cmd-row" data-item><code class="cmd">/showprofile</code><p lang="uk">Показати свою картку в чаті — побачать усі.</p><p lang="en">Post your card in the chat — everyone sees it.</p><span class="tag t-profile" lang="uk">профіль</span><span class="tag t-profile" lang="en">profile</span></div>
+    <div class="cmd-row" data-item><code class="cmd">/top</code><p lang="uk">Таблиця лідерів: гравці за XP та гільдії за XP місяця. Перемикається кнопкою під карткою.</p><p lang="en">Leaderboard: players by XP and guilds by this month's XP. Switch with the button under the card.</p><span class="tag t-profile" lang="uk">топ</span><span class="tag t-profile" lang="en">top</span></div>
+    <div class="cmd-row" data-item><code class="cmd">/guild</code><p lang="uk">Картка твоєї гільдії та меню керування. Не в гільдії? Тут її можна заснувати. Бачиш лише ти.</p><p lang="en">Your guild's card and its management menu. Not in a guild? Found one here. Only you see it.</p><span class="tag t-guild" lang="uk">гільдія</span><span class="tag t-guild" lang="en">guild</span></div>
+    <div class="cmd-row" data-item><code class="cmd">/showguild</code><p lang="uk">Показати картку гільдії в чаті для всіх.</p><p lang="en">Post the guild card in the chat for everyone.</p><span class="tag t-guild" lang="uk">гільдія</span><span class="tag t-guild" lang="en">guild</span></div>
+    <div class="cmd-row" data-item><code class="cmd">/shop</code><p lang="uk">Крамниця: бусти, скриньки, фони, VIP, Nitro. Купуєш за золото чи кристали.</p><p lang="en">The shop: boosts, chests, backgrounds, VIP, Nitro. Pay with gold or crystals.</p><span class="tag t-shop" lang="uk">крамниця</span><span class="tag t-shop" lang="en">shop</span></div>
+    <div class="cmd-row" data-item><code class="cmd"><span lang="uk">/link Ім'я#Тег</span><span lang="en">/link Name#Tag</span></code><p lang="uk">Прив'язати свій Riot-акаунт. Бот дасть іконку, яку треба поставити в клієнті.</p><p lang="en">Link your Riot account. The bot hands you an icon to set in the client.</p><span class="tag t-riot">riot</span></div>
+    <div class="cmd-row" data-item><code class="cmd">/verify</code><p lang="uk">Підтвердити прив'язку після зміни іконки (у межах 15 хвилин).</p><p lang="en">Confirm the link after changing the icon (within 15 minutes).</p><span class="tag t-riot">riot</span></div>
+    <div class="cmd-row" data-item><code class="cmd">/unlink</code><p lang="uk">Відв'язати свій Riot-акаунт.</p><p lang="en">Unlink your Riot account.</p><span class="tag t-riot">riot</span></div>
+    <div class="cmd-row" data-item><code class="cmd">/help</code><p lang="uk">Довідка прямо в Discord — з вибором розділу.</p><p lang="en">Help right inside Discord — with a category picker.</p><span class="tag">help</span></div>
+  </div>
+
+  <p class="empty" id="noResults"><span lang="uk">Нічого не знайдено. Спробуй інше слово або напиши <kbd>/help</kbd> у Discord.</span><span lang="en">Nothing found. Try another word, or type <kbd>/help</kbd> in Discord.</span></p>
+</div>
+</section>
+
+<!-- ═══════════════════════════ 05 MINI-GAME (coming soon) ═══════════════════════════ -->
+<section class="block" id="minigame">
+<div class="wrap">
+  <div class="sec-head"><span class="no">05</span><h2><span lang="uk">Міні-гра</span><span lang="en">Mini-game</span></h2></div>
+
+  <div class="soon" id="minigameSoon">
+    <span class="fl f1" aria-hidden="true">🪙</span><span class="fl f2" aria-hidden="true">💎</span>
+    <span class="fl f3" aria-hidden="true">🎁</span><span class="fl f4" aria-hidden="true">🪙</span>
+    <p class="soon-tag"><span lang="uk">У розробці</span><span lang="en">In development</span></p>
+    <p class="soon-big"><span lang="uk">Скоро</span><span lang="en">Coming soon</span></p>
+    <p class="soon-text" lang="uk">Готуємо міні-гру, у якій можна буде заробляти золото та кристали. Слідкуй за оновленнями!</p>
+    <p class="soon-text" lang="en">We are building a mini-game where you will be able to earn gold and crystals. Stay tuned!</p>
+  </div>
+
+</div>
+</section>
+
+<!-- ═══════════════════════════ EASTER EGG (hidden — revealed by the footer egg, 5 logo clicks, Konami, #egg) ═══════════════════════════ -->
+<section class="block" id="egg" hidden>
+<div class="wrap">
+  <div class="sec-head"><span class="no">🥚</span><h2><span lang="uk">Скарбниця Поро</span><span lang="en">The Poro Vault</span></h2></div>
+  <p class="sec-lede" lang="uk">Ти знайшов пасхалку! 60 секунд, золото та кристали сиплються з неба. Лови їх кліком чи дотиком — але стережися грибів Тімо 🍄 і не клацай повз: промахи коштують золота.</p>
+  <p class="sec-lede" lang="en">You found the easter egg! 60 seconds, gold and crystals raining from the sky. Catch them with a click or a tap — but beware Teemo's mushrooms 🍄 and don't click at nothing: misses cost gold.</p>
+  <div class="egg-box">
+    <div class="hud">
+      <div class="stat gold"><small lang="uk">Золото</small><small lang="en">Gold</small><span id="hGold">0</span> 🪙</div>
+      <div class="stat cry"><small lang="uk">Кристали</small><small lang="en">Crystals</small><span id="hCry">0</span> 💎</div>
+      <div class="stat"><small lang="uk">Час</small><small lang="en">Time</small><span id="hTime">60</span> s</div>
+      <div class="stat"><small lang="uk">Комбо</small><small lang="en">Combo</small>×<span id="hCombo">1</span></div>
+      <div class="stat"><small lang="uk">Рекорд</small><small lang="en">Best</small><span id="hBest">0</span></div>
+    </div>
+    <div class="stage">
+      <canvas id="game" width="720" height="420" aria-label="Mini-game"></canvas>
+      <div class="overlay" id="ovStart">
+        <h3 lang="uk">Готовий?</h3><h3 lang="en">Ready?</h3>
+        <p lang="uk">🪙 золото = +10 · 💎 кристал = +1 · 🎁 бонус · 🍄 гриб = −30 і скидає комбо. Промах по порожньому місці — −5 і скидання комбо; пропущений скарб теж скидає комбо. Лови поспіль — комбо множить золото, а з часом усе пришвидшується!</p>
+        <p lang="en">🪙 gold = +10 · 💎 crystal = +1 · 🎁 bonus · 🍄 mushroom = −30 and breaks your combo. Clicking at nothing costs −5 and breaks the combo; a missed treasure breaks it too. Catch in a row — the combo multiplies gold, and everything speeds up over time!</p>
+        <button class="btn gold" id="btnStart" type="button">▶ <span lang="uk">Грати</span><span lang="en">Play</span></button>
+      </div>
+      <div class="overlay" id="ovEnd" hidden>
+        <h3 id="endTitle"></h3>
+        <p id="endLine"></p>
+        <button class="btn gold" id="btnAgain" type="button">↻ <span lang="uk">Ще раз</span><span lang="en">Again</span></button>
+      </div>
+    </div>
+    <p class="fine" lang="uk">Це лише розвага на сайті: золото та кристали тут не переходять у Discord-бота.</p>
+    <p class="fine" lang="en">Just for fun on this page: the gold and crystals here don't carry over to the Discord bot.</p>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand"><img src="assets/img/logo.png" width="56" height="56" alt=""></span>
+    <div>
+      <p lang="uk"><b>LoL UA Community</b> — довідник гравця. Проєкт не схвалений Riot Games і не відображає поглядів чи думок Riot Games або будь-кого, хто офіційно причетний до створення чи керування продуктами Riot Games. League of Legends — торговельна марка Riot Games, Inc.</p>
+      <p lang="en"><b>LoL UA Community</b> — a player's guide. Not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. League of Legends is a trademark of Riot Games, Inc.</p>
+    </div>
+    <div class="foot-actions">
+      <a class="btn green small" href="https://send.monobank.ua/jar/743Uf3Z7vy" target="_blank" rel="noopener">❤️ <span lang="uk">Підтримати нас</span><span lang="en">Support us</span></a>
+      <button id="egg-seed" type="button" aria-label="🥚" title="🥚">🥚</button>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
